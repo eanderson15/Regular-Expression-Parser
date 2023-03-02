@@ -1,9 +1,3 @@
-Eric Anderson
-eander29@u.rochester.edu
-
-No known collaborators
-
-THIS IS AN ECLIPSE PROJECT
 runs main function in rexp.c
 Written in eclipse
 Building in the command prompt:
@@ -17,11 +11,10 @@ tree will be printed, and the set of nested expressions will be printed. Example
 Passes valgrind except for 6 reacable memory leaks and another that I believe is caused by Windows (I included the error message for it below the example output).
 
 . character corresponds to concatenation
-Input is coded to work with spaces in the input (use if you give a shit)
+Input is coded to work with spaces in the input
 
-I did not do any work on part 3 past what is recquired (printing the nested set of expressions). My code also prints out the expression tree.
-Functions for part 3 are in Tree.c.
-Small issues with part 3:
+My code also prints out the expression tree.
+Small issues:
 	- firstly, if properly parenthesized these errors don't occur
 	- if input has any operations with . or | at the same level such as "a.b.c" or "a|b|c", the output expression tree will group the letters in the wrong
 	  order. Instead of (a.b).c, it would be a.(b.c). In the end, the expression is correct because of the associativity of these operators.
@@ -134,5 +127,3 @@ Error #6: LEAK 2 direct bytes 0x01550c98-0x01550c9a + 0 indirect bytes
 # 5 .text   
 # 6 ntdll.dll!RtlGetAppContainerNamedObjectPath    +0xe3     (0x77917c24 <ntdll.dll+0x67c24>)
 # 7 ntdll.dll!RtlGetAppContainerNamedObjectPath    +0xb3     (0x77917bf4 <ntdll.dll+0x67bf4>)
-
-Hello again, so yeah let me know if all I did was take a big fat deuce and you know just have a great time grading this project.
